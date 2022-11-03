@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-GB
+name: musicalarchive
+primary: true
+siteGroup: 06082fde-cddb-44bb-bce6-e870b82add2e # musicalarchive
+sortOrder: 1

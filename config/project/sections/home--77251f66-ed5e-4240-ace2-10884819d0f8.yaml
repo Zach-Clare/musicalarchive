@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: home
+name: Home
+propagationMethod: all
+siteSettings:
+  8f388929-8455-4fd7-8f9e-7bb45d20c016: # musicalarchive
+    enabledByDefault: true
+    hasUrls: true
+    template: index.twig
+    uriFormat: __home__
+type: single

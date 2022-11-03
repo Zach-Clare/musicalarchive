@@ -1,0 +1,17 @@
+columnSuffix: yjuzkksy
+contentColumnType: datetime
+fieldGroup: 282ab7e6-9aad-4a08-be01-6e500f83865b # Collection FIelds
+handle: acquisitionDate
+instructions: null
+name: 'Acquisition Date'
+searchable: false
+settings:
+  max: null
+  min: null
+  minuteIncrement: 30
+  showDate: true
+  showTime: false
+  showTimeZone: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Date

@@ -1,0 +1,86 @@
+field: 8766ac03-8149-44eb-b661-5c6277fc409a # Home Section
+fieldLayouts:
+  672d6d7a-8d64-42af-8ef8-05eb3cdd59c7:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: d33c00e7-61c8-4013-a389-f165b90f06d3 # Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d9916626-123d-4015-94ca-c9dc7363c6c2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 47306389-8bad-47ef-9573-e3ad6dfb9e39 # Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2379c951-1c9d-44a5-8478-ba763898fdd3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 29ae57a9-8271-42c8-85d1-3bc4d4a77f30
+        userCondition: null
+fields:
+  47306389-8bad-47ef-9573-e3ad6dfb9e39: # Content
+    columnSuffix: hxufdags
+    contentColumnType: text
+    fieldGroup: null
+    handle: sectionContent
+    instructions: null
+    name: Content
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  d33c00e7-61c8-4013-a389-f165b90f06d3: # Title
+    columnSuffix: zyhxemkq
+    contentColumnType: text
+    fieldGroup: null
+    handle: sectionTitle
+    instructions: 'Name of the section to be displayed'
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: contentTitle
+name: Title
+sortOrder: 1

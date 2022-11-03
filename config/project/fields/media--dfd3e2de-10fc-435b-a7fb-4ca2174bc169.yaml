@@ -1,0 +1,56 @@
+columnSuffix: wxspdtug
+contentColumnType: string
+fieldGroup: 282ab7e6-9aad-4a08-be01-6e500f83865b # Collection FIelds
+handle: media
+instructions: null
+name: Media
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Vinyl
+        -
+          - value
+          - vinyl
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Cassette
+        -
+          - value
+          - cassette
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - MP3
+        -
+          - value
+          - mp3
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - CD
+        -
+          - value
+          - cd
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

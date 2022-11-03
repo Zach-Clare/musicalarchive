@@ -1,0 +1,69 @@
+h2 {
+  font-size: 1.5rem;
+}
+
+#burger {
+  position: fixed;
+  z-index: 10;
+  right: 3rem;
+  top: 3rem;
+}
+.btn-line {
+  width: 2rem;
+  height: 0.25rem;
+  margin: 0 0 0.5rem 0;
+  background: black;
+}
+
+.menu {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 5;
+  background-color: white;
+}
+.nav-ul {
+  align-items: baseline;
+}
+.site-title {
+  font-family: 'Times New Roman', serif;
+  font-size: 3rem;
+}
+.nav-item {
+  font-size: 1.5rem;
+}
+
+.home-hero {
+  height: 80vh;
+  background: rgba(0,0,0,0.4);
+  background-blend-mode: darken;
+}
+
+.home-section {
+  height: 35rem;
+}
+
+.home-section-content {
+  background-color: white;
+  box-shadow: 5px 10px 10px rgba(30, 64, 174, 0.3);
+  @include media-breakpoint-only(md) {
+    background-color: none;
+    box-shadow: none;
+  }
+}
+.home-section-1 {
+  background-image:
+    linear-gradient(to right, rgba(255,255,255, 0.7), rgba(255,255,255, 0.7)),
+    url('/assets/general/background.svg');
+}
+
+.card-columns {
+    @include media-breakpoint-only(md) {
+      column-count: 3;
+    }
+    @include media-breakpoint-only(xl) {
+      column-count: 4;
+    }
+  }

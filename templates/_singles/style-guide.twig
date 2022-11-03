@@ -1,0 +1,37 @@
+{% extends "_layout.twig" %}
+
+{% block content %}
+    <h1 class="text-4x1 text-black font-display my-4">{{ entry.title }}</h1>
+
+    <div class="flex -mx-4">
+        <div class="w-1/2 px-4">
+            {% include "_includes/post-blocks.twig" with { blocks: entry.postContent.all() } only %}
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="card" style="width:500px">
+                    <img class="card-img-top" src="" alt="Card image">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">I Had the Blues but I Shook Them Loose</h4>
+                        <p class="card-text">Bombay Bicycle Club</p>
+                        <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                Album
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                Album
+            </div>
+            <div class="col-6">
+                Album
+            </div>
+        </div>
+        <p>test</p>
+    </div> 
+{% endblock %}

@@ -1,0 +1,25 @@
+<script src="/js/nav.js"></script>
+
+<nav id="navigation-main" class="container d-none d-md-block" role="navigation" aria-label="Main">
+    {% set firstSegment = craft.app.request.getSegment(1) %}
+    <ul class="flex nav-ul flex-column flex-md-row justify-content-md-center">
+        <li class="nav-item">
+            <a class="site-title nav-link {{ firstSegment == "" ? 'border-b border-blue-400' }}" href="{{ siteUrl }}">musical<span class="text-blue-800">archive</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link {{ firstSegment == "blog" ? "border-b border-blue-400" }}" href="{{ url("music") }}">Music</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link {{ firstSegment == "blog" ? "border-b border-blue-400" }}" href="{{ url("blog") }}">Blog</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link {{ firstSegment == "about" ? "border-b border-blue-400" }}" href="{{ url("about") }}">About</a>
+        </li>
+    </ul>
+</nav>
+
+<div id="burger" class="d-md-none" onclick="toggleNav()">
+    <div class="btn-line"></div>
+    <div class="btn-line"></div>
+    <div class="btn-line"></div>
+</div>

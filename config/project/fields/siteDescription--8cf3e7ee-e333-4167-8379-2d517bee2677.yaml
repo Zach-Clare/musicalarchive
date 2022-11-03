@@ -1,0 +1,19 @@
+columnSuffix: ucfcrxhm
+contentColumnType: text
+fieldGroup: 634a1f41-8434-47af-9ff4-0dc5ff872cbd # Global Fields
+handle: siteDescription
+instructions: null
+name: 'Site Description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

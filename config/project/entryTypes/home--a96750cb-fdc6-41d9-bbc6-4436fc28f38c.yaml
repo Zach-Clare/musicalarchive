@@ -1,0 +1,79 @@
+fieldLayouts:
+  49c0025e-42ed-4ccc-8e22-96a62727e384:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: e92d766b-ad8d-4c89-b06a-1ed830af8cef
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 639f7ec5-55ce-4c1d-9e03-c3df12727378 # Feature Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 12829e72-d2eb-4ea9-85e4-08e880a4f47a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 94794f26-22b3-4740-ad7f-918f14a7e25a # Post Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 928e01a1-a391-4a11-821f-93630090fde0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8766ac03-8149-44eb-b661-5c6277fc409a # Home Section
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1320cb1f-054b-4eba-a772-b95ab9017482
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 00118968-0db9-4bbc-a631-f02f36dbf9aa
+        userCondition: null
+handle: home
+hasTitleField: false
+name: Home
+section: 77251f66-ed5e-4240-ace2-10884819d0f8 # Home
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

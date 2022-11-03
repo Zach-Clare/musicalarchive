@@ -1,0 +1,46 @@
+defaultPlacement: end
+fieldLayouts:
+  45764232-6a04-4bf9-a04a-5cd7e32c4c96:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: e79c6668-9b82-495a-90cb-6a17b2e01466
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 589ecd59-a48e-4f28-9505-eeaf7b098fc4
+        userCondition: null
+handle: blogCategories
+name: 'Blog Categories'
+siteSettings:
+  8f388929-8455-4fd7-8f9e-7bb45d20c016: # musicalarchive
+    hasUrls: true
+    template: blog/_category
+    uriFormat: 'blog/category/{slug}'
+structure:
+  maxLevels: 1
+  uid: 0b2588bb-8e35-4a3a-b816-4207f33f3e1c

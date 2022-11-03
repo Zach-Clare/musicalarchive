@@ -1,0 +1,19 @@
+columnSuffix: akxphvey
+contentColumnType: text
+fieldGroup: 64d7f960-7f9d-4af1-9c22-93abee4cd24c # Blog Fields
+handle: summary
+instructions: 'Enter a brief, one or two sentence post summary.'
+name: Summary
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 1
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

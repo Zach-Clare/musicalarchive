@@ -1,0 +1,35 @@
+<div class="post-list container">
+    <div class="row g-2">
+    {% for post in posts %}
+
+        {# {% if loop.first %}
+        <div class="row"> {# opens new row #}
+        {#% endif %} #}
+            <div class="col-12 col-lg-6 col-xl-4 h-100 pt-2 pb-2"> {# col-12 col-lg-6 col-xl-4 #}
+                <a href="{{ post.url }}" class="flex shadow-md rounded items-center justify-center overflow-hidden">
+                {% if post.photo|length %}
+                    {% set image = post.photo.one() %}
+                    <div class="w-1/4">
+                        <img src="{{ image.getUrl({ width: 300, height: 300 }) }}"
+                            alt="{{ image.title }}"
+                            class="block"
+                        />
+                    </div>
+                {% endif %}
+                    <span class="title w-3/4 pl-4 m-2">{{ post.title }} - {{ post.artist.one().artist}}</span>
+                    {% if post.title == post.artist.one().artist %}
+                        {# Self-titled #}
+                    {% endif %}
+                </a>
+            </div>
+
+        {# {% if loop.index % 3 == 0 %}
+            </div><div class="row">
+        {% endif %}
+
+        {% if loop.last %}
+            </div>
+        {% endif %} #}
+    {% endfor %}
+    </div>
+</div>

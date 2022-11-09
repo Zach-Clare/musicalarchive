@@ -1,21 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ craft.app.language }}">
-  <head>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <meta charset="utf-8"/> 
-    <title>{{ siteName }}</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="/styles.css" rel="stylesheet">
-    <link href="/custom-style.css" rel="stylesheet">
-  </head>
+  {{ include("_includes/head.twig") }}
   <body class="ltr bg-white">
     {% include "_includes/nav.twig" %}
     {% block content %}
     {% endblock %}
-    <footer class="container mx-auto p-4 text-sm">
-      {{ siteInformation.siteDescription|markdown }}
-      <p>&copy; {{ now | date("Y") }} - built by <a class="text-blue-600" href="http://helixsoftware.uk">Helix Software</a> with <a class="text-blue-600" href="https://craftcms.com">Craft CMS</a>.</p>
-    </footer>
+    {{ include("_includes/footer.twig") }}
   </body>
 </html>

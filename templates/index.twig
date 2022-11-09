@@ -10,8 +10,8 @@
     <div class="fluid-container d-flex justify-content-center align-items-center flex-column mt-md-3 home-hero" style='background-image: url("{{ featureImage.url }}")'>
     {% for block in entry.postContent.all() %}
         {% if block.type == "text" %}
-            <p class="site-desc text-white ">{{ block.text }}</p>
-            <a href="{{ url("music") }}" class="btn btn-primary btn-lg mt-4" role="button">Explore &rarr;</a>
+            <div class="site-desc text-white "><h1>{{ block.text }}</h1></div>
+            <a href="{{ url("music") }}" class="btn btn-primary btn-lg mt-4" role="button">Explore the Collection &rarr;</a>
         {% endif %} {# we don't want to show any attached images here #}
     {% endfor %}
         

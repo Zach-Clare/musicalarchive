@@ -11,7 +11,10 @@
     {% for block in entry.postContent.all() %}
         {% if block.type == "text" %}
             <div class="site-desc text-white "><h1>{{ block.text }}</h1></div>
-            <a href="{{ url("music") }}" class="btn btn-primary btn-lg mt-4" role="button">Explore the Collection &rarr;</a>
+            <a href="{{ url("music") }}" class="btn btn-light btn-lg mt-4" role="button">Explore the Collection <span class="col-3 fa-stack fa-4x fa-2xs pr-3">
+                        <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                        <i class="fa fa-chevron-right fa-stack-1x"></i>
+                    </span></a>
         {% endif %} {# we don't want to show any attached images here #}
     {% endfor %}
         
@@ -25,7 +28,7 @@
                 
             </div>
             <div class="col-11 col-md-8 d-flex flex-column justify-content-center">
-                <div class="home-section-content p-4 p-md-5">    
+                <div class="home-section-content p-4 p-md-5 rounded-xl bg-light">    
                     <h2 class="mb-3">{{ homeSection.sectionTitle }}</h2>
                     <p>{{ homeSection.sectionContent }}</p>
                 </div>

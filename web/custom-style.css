@@ -33,7 +33,12 @@ h2 {
 }
 .site-title {
   font-family: 'Times New Roman', serif;
-  font-size: 3rem;
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .site-title {
+    font-size: 3rem;
+  }
 }
 .nav-item {
   font-size: 1.5rem;

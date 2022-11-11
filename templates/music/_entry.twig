@@ -1,0 +1,17 @@
+{% extends "_layout.twig" %}
+
+{% block content %}
+
+<div class="row">
+    <div class="spacer m-5 d-md-none"></div>
+    <div class="col-12 col-md-6 mt-4">
+        <img src="{{ entry.photo.one().url }}">
+    </div>
+    <div class="col-12 col-md-6 mt-4">
+        <h1 class="album-title text-black mt-4">{{ entry.title }}</h1>
+        <h2 class="artist-title font-italic mt-2">{{ entry.artist.one().artist }}</h2>
+    </div>
+</div>
+    
+
+{% endblock %}

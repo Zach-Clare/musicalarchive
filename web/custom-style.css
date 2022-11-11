@@ -6,12 +6,12 @@ h2 {
   font-size: 1.5rem;
 }
 
-#burger {
+.top-mobile-nav {
+  background-color: white;
   position: fixed;
   z-index: 10;
-  right: 3rem;
-  top: 3rem;
 }
+
 .btn-line {
   width: 2rem;
   height: 0.25rem;
@@ -71,3 +71,23 @@ h2 {
       column-count: 4;
     }
   }
+
+.album-link {
+  overflow: hidden;
+}
+a.album-link:hover {
+  text-decoration: none;
+  color: inherit;
+  background-color: #f8f9fa!important;
+  box-shadow: 3px 3px 10px #ededed;
+}
+.icon-background {
+  color: #dee1e5;
+}
+.fa-chevron-right {
+  color: #535353;
+}
+
+.artist-title {
+  color: #686868;
+}

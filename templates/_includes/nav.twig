@@ -1,13 +1,30 @@
 <script src="/js/nav.js"></script>
 
-<nav id="navigation-main" class="container d-none d-md-block" role="navigation" aria-label="Main">
-    {% set firstSegment = craft.app.request.getSegment(1) %}
+{% set firstSegment = craft.app.request.getSegment(1) %}
+
+<div class="container-fluid flex justify-content-between d-md-none top-mobile-nav">
+    <div class="col-9">
+        <a class="site-title nav-link {{ firstSegment == "" ? 'border-b border-blue-400' }}" href="{{ siteUrl }}">musical<span class="text-blue-800">archive</span></a>
+    </div>
+    <div class="col-3 burger-div flex justify-content-center align-items-center" onclick="toggleNav()">
+        <div id="burger" class="col-3">
+            {# <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div> #}
+            <i class="fa fa-bars fa-2xl" aria-hidden="true"></i>
+        </div>
+    </div>
+</div>
+
+<nav id="navigation-main" class="container-fluid d-none d-md-block" role="navigation" aria-label="Main">
+    
+    <div class="spacer m-4 d-md-none"><br></div>
     <ul class="flex nav-ul flex-column flex-md-row justify-content-md-center">
-        <li class="nav-item">
+        <li class="nav-item d-none d-md-block">
             <a class="site-title nav-link {{ firstSegment == "" ? 'border-b border-blue-400' }}" href="{{ siteUrl }}">musical<span class="text-blue-800">archive</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link {{ firstSegment == "blog" ? "border-b border-blue-400" }}" href="{{ url("music") }}">Music</a>
+            <a class="nav-link {{ firstSegment == "music" ? "border-b border-blue-400" }}" href="{{ url("music") }}">Music</a>
         </li>
         <li class="nav-item">
             <a class="nav-link {{ firstSegment == "blog" ? "border-b border-blue-400" }}" href="{{ url("blog") }}">Blog</a>
@@ -18,8 +35,4 @@
     </ul>
 </nav>
 
-<div id="burger" class="d-md-none" onclick="toggleNav()">
-    <div class="btn-line"></div>
-    <div class="btn-line"></div>
-    <div class="btn-line"></div>
-</div>
+

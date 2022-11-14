@@ -1,9 +1,14 @@
 h1 {
   font-size: 2rem;
 }
-
 h2 {
   font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.1rem;
+}
+p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .top-mobile-nav {
@@ -33,7 +38,12 @@ h2 {
 }
 .site-title {
   font-family: 'Times New Roman', serif;
-  font-size: 3rem;
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .site-title {
+    font-size: 3rem;
+  }
 }
 .nav-item {
   font-size: 1.5rem;
@@ -46,12 +56,12 @@ h2 {
 }
 
 .home-section {
-  height: 35rem;
+  height: 23rem;
 }
 
 .home-section-content {
   background-color: white;
-  box-shadow: 5px 10px 10px rgba(30, 64, 174, 0.3);
+  box-shadow: 5px 10px 10px rgba(128, 128, 128, 0.3);
   @include media-breakpoint-only(md) {
     background-color: none;
     box-shadow: none;
@@ -59,7 +69,7 @@ h2 {
 }
 .home-section-1 {
   background-image:
-    linear-gradient(to right, rgba(255,255,255, 0.7), rgba(255,255,255, 0.7)),
+    linear-gradient(to right, rgba(255,255,255, 0.9), rgba(255,255,255, 0.9)),
     url('/assets/general/background.svg');
 }
 
@@ -91,3 +101,7 @@ a.album-link:hover {
 .artist-title {
   color: #686868;
 }
+
+/* .album__section {
+  background-color: ;
+} */

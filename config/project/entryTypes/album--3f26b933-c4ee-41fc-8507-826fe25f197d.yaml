@@ -68,6 +68,24 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: cbec6195-2d3a-45e1-9e20-b7693d4c6eb5 # tracklist
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4eab5abd-b7a8-487b-97be-7b4705822433
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Item Information'
+        uid: 1064ff7a-5640-4669-a205-cd685abedec8
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
             fieldUid: 446a111b-09c6-4903-840d-269957206f95 # Unique
             instructions: null
             label: null
@@ -78,12 +96,6 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: 'Item Information'
-        uid: 1064ff7a-5640-4669-a205-cd685abedec8
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
           -
             elementCondition: null
             fieldUid: eecdfa60-7de8-4d9a-ad1b-9b634842f8e3 # Acquisition Date

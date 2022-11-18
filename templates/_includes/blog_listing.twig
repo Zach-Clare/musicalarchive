@@ -1,6 +1,6 @@
-<div class="post-list my-10 flex">
+<div class="post-list my-10 d-flex">
 {% for post in posts %}
-    <a href="{{ post.url }}" class="flex shadow-lg rounded items-center justify-center overflow-hidden">
+    <a href="{{ post.url }}" class="d-flex shadow-lg rounded items-center justify-center overflow-hidden">
         {% if post.featureImage|length %}
             {% set image = post.featureImage.one() %}
             <div class="w-1/4">

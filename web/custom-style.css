@@ -1,3 +1,7 @@
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
 h1 {
   font-size: 2rem;
 }
@@ -9,6 +13,32 @@ h3 {
 }
 p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+  color: inherit;
+}
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
+  margin: 0;
+}
+
+
+.text-blue-800 {
+  color: rgba(30, 64, 175);
+}
+.border-blue-400 {
+  --tw-border-opacity: 1;
+  border-color: rgba(96, 165, 250, var(--tw-border-opacity));
+}
+.border-b {
+  border-bottom-width: 1px;
 }
 
 .top-mobile-nav {

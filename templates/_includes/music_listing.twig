@@ -6,7 +6,7 @@
         <div class="row"> {# opens new row #}
         {#% endif %} #}
             <div class="col-12 col-lg-6 col-xl-4 h-100 pt-2 pb-2"> {# col-12 col-lg-6 col-xl-4 #}
-                <a href="{{ post.url }}" class="flex justify-content-between align-items-center rounded-xl bg-light album-link">
+                <a href="{{ post.url }}" class="d-flex justify-content-between align-items-center rounded-lg bg-light album-link">
                 {% if post.photo|length %}
                     {% set image = post.photo.one() %}
                     <div class="col-3 p-0">

@@ -3,7 +3,7 @@
 {% block content %}
     <h1 class="text-4x1 text-black font-display my-4">{{ entry.title }}</h1>
 
-    <div class="flex -mx-4">
+    <div class="d-flex -mx-4">
         <div class="w-1/2 px-4">
             {% include "_includes/post-blocks.twig" with { blocks: entry.postContent.all() } only %}
         </div>

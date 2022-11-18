@@ -12497,7 +12497,7 @@ video {
   border-radius: 1rem;
 }
 
-.rounded-3xl {
+.rounded-lgxl {
   border-radius: 1.5rem;
 }
 
@@ -43838,7 +43838,7 @@ video {
     border-radius: 1rem;
   }
 
-  .sm\:rounded-3xl {
+  .sm\:rounded-lgxl {
     border-radius: 1.5rem;
   }
 
@@ -75066,7 +75066,7 @@ video {
     border-radius: 1rem;
   }
 
-  .md\:rounded-3xl {
+  .md\:rounded-lgxl {
     border-radius: 1.5rem;
   }
 
@@ -106294,7 +106294,7 @@ video {
     border-radius: 1rem;
   }
 
-  .lg\:rounded-3xl {
+  .lg\:rounded-lgxl {
     border-radius: 1.5rem;
   }
 
@@ -137522,7 +137522,7 @@ video {
     border-radius: 1rem;
   }
 
-  .xl\:rounded-3xl {
+  .xl\:rounded-lgxl {
     border-radius: 1.5rem;
   }
 
@@ -168750,7 +168750,7 @@ video {
     border-radius: 1rem;
   }
 
-  .\32xl\:rounded-3xl {
+  .\32xl\:rounded-lgxl {
     border-radius: 1.5rem;
   }
 

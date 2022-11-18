@@ -6,7 +6,7 @@
 
 {% block content %}
 
-<div class="row flex align-items-center justify-content-center">
+<div class="row d-flex align-items-center justify-content-center">
     <div class="spacer m-5 d-md-none"></div>
     <div class="col-11 col-md-6 mt-4 text-center">
         <img src="{{ entry.photo.one().url }}">
@@ -22,9 +22,9 @@
     </div>
 </div>
 {% if entry.notes %}
-<div class="container mt-5 bg-light rounded-xl infobox">
+<div class="container mt-5 bg-light rounded-lg infobox">
     <div class="p-3 infobox__all">
-        <div class="infobox__top flex justify-content-between">
+        <div class="infobox__top d-flex justify-content-between">
             <h3 class="infobox__heading">Notes</h3>
             <span class="col-3 fa-stack fa-4x fa-2xs pr-3 infobox__arrow">
                 <i class="fa fa-circle fa-stack-2x icon-background"></i>
@@ -36,9 +36,9 @@
 </div>
 {% endif %}
 {% if entry.tracklist %}
-<div class="container mt-4 bg-light rounded-xl infobox">
+<div class="container mt-4 bg-light rounded-lg infobox">
     <div class="p-3 infobox__all">
-        <div class="infobox__top flex justify-content-between">
+        <div class="infobox__top d-flex justify-content-between">
             <h3 class="infobox__heading">Tracklist</h3>
             <span class="col-3 fa-stack fa-4x fa-2xs pr-3 infobox__arrow">
                 <i class="fa fa-circle fa-stack-2x icon-background"></i>

@@ -29,7 +29,7 @@ blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
   margin: 0;
 }
 
-
+/* tailwind temporary fix */
 .text-blue-800 {
   color: rgba(30, 64, 175);
 }
@@ -41,6 +41,7 @@ blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
   border-bottom-width: 1px;
 }
 
+/* navigation */
 .top-mobile-nav {
   background-color: white;
   position: fixed;
@@ -79,6 +80,7 @@ blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
   font-size: 1.5rem;
 }
 
+/* homepage */
 .home-hero {
   height: 80vh;
   background: rgba(0,0,0,0.4);
@@ -112,6 +114,7 @@ blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
     }
   }
 
+/* album page */
 .album-link {
   overflow: hidden;
 }
@@ -126,10 +129,20 @@ a.album-link:hover {
 }
 .fa-chevron-right {
   color: #535353;
+  transition: transform 0.2s ease 0s;
 }
-
+.infobox__content__wrapper {
+  max-height: inherit;
+  overflow: hidden;
+  transition: max-height 0.1s ease 0s;
+}
 .artist-title {
   color: #686868;
+}
+
+/* components */ 
+.rounded-xl {
+  border-radius: 1em;
 }
 
 /* .album__section {

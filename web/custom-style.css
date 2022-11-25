@@ -39,6 +39,7 @@ blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
 }
 .border-b {
   border-bottom-width: 1px;
+  border-bottom-style: solid;
 }
 
 /* navigation */
@@ -46,6 +47,7 @@ blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
   background-color: white;
   position: fixed;
   z-index: 10;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .btn-line {
@@ -114,6 +116,10 @@ blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
     }
   }
 
+
+/* Music listing page */
+
+
 /* album page */
 .album-link {
   overflow: hidden;
@@ -143,6 +149,14 @@ a.album-link:hover {
 /* components */ 
 .rounded-xl {
   border-radius: 1em;
+}
+.rounded-r-xl {
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+.rounded-l-lg {
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
 }
 
 /* .album__section {

@@ -1,39 +1,28 @@
 <div class="post-list container">
     <div class="row g-2">
     {% for post in posts %}
-
-        {# {% if loop.first %}
-        <div class="row"> {# opens new row #}
-        {#% endif %} #}
-            <div class="col-12 col-lg-6 col-xl-4 h-100 pt-2 pb-2"> {# col-12 col-lg-6 col-xl-4 #}
-                <a href="{{ post.url }}" class="d-flex justify-content-between align-items-center rounded-lg bg-light album-link">
-                {% if post.photo|length %}
-                    {% set image = post.photo.one() %}
-                    <div class="col-3 p-0">
-                        <img src="{{ image.getUrl({ width: 300, height: 300 }) }}"
-                            alt="{{ image.title }}"
-                            class="block"
-                        />
-                    </div>
+        <div class="col-12 col-lg-6 col-xl-4 h-100 pt-2 pb-2">
+            <a href="{{ post.url }}" class="d-flex justify-content-between align-items-center rounded-l-lg rounded-r-xl bg-light album-link">
+            {% if post.photo|length %}
+                {% set image = post.photo.one() %}
+                <div class="col-3 p-0">
+                    <img src="{{ image.getUrl({ width: 300, height: 300 }) }}"
+                        alt="{{ image.title }}"
+                        class="block"
+                    />
+                </div>
+            {% endif %}
+                <span class="title col-6 pl-4">{{ post.title|truncate(26) }} - {{ post.artists.one()}}</span>
+                {% if post.title == post.artists.one().artist %}
+                    {# Self-titled #}
                 {% endif %}
-                    <span class="title col-6 pl-4 m-2">{{ post.title }} - {{ post.artist.one().artist}}</span>
-                    {% if post.title == post.artist.one().artist %}
-                        {# Self-titled #}
-                    {% endif %}
-                    <span class="col-3 fa-stack fa-4x fa-xs pr-3">
-                        <i class="fa fa-circle fa-stack-2x icon-background"></i>
-                        <i class="fa fa-chevron-right fa-stack-1x"></i>
-                    </span>
-                </a>
-            </div>
+                <span class="col-3 fa-stack fa-4x fa-xs pr-3">
+                    <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                    <i class="fa fa-chevron-right fa-stack-1x"></i>
+                </span>
+            </a>
+        </div>
 
-        {# {% if loop.index % 3 == 0 %}
-            </div><div class="row">
-        {% endif %}
-
-        {% if loop.last %}
-            </div>
-        {% endif %} #}
     {% endfor %}
     </div>
 </div>

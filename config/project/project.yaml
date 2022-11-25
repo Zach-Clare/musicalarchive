@@ -1,4 +1,4 @@
-dateModified: 1668703976
+dateModified: 1669387328
 email:
   fromEmail: zach@helixsoftware.uk
   fromName: musicalarchive
@@ -36,6 +36,7 @@ meta:
     4b085c5b-cbde-4cea-8d32-e833e7e3fc17: About # About
     5de137c5-736f-4994-9fe8-109f6002e489: Music # Music
     6ccdcca2-31c8-4fee-bf35-1b3d007e5ff4: Artist/Author # Artist/Author
+    7a0000f4-5ffe-4abe-8c99-b4fefce16d2e: Artists # Artists
     7e86ba13-ef94-468b-88d6-019ed278001b: Track # Track
     8cf3e7ee-e333-4167-8379-2d517bee2677: 'Site Description' # Site Description
     8f388929-8455-4fd7-8f9e-7bb45d20c016: musicalarchive # musicalarchive
@@ -50,6 +51,7 @@ meta:
     634a1f41-8434-47af-9ff4-0dc5ff872cbd: 'Global Fields' # Global Fields
     639f7ec5-55ce-4c1d-9e03-c3df12727378: 'Feature Image' # Feature Image
     810ffced-40f8-4288-b700-feca32601c70: 'About Image' # About Image
+    4443b572-3e49-4a10-812a-9e83b22e2312: artists # artists
     5483b3c4-b3d6-4315-a7ab-457d23d0a267: Text # Text
     06082fde-cddb-44bb-bce6-e870b82add2e: musicalarchive # musicalarchive
     7654d583-cba2-4e65-8f71-26227bf7ee8c: Mixtape # Mixtape

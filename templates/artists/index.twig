@@ -1,0 +1,16 @@
+{% set artistName = craft.app.request.getQueryParam("q") %}
+{% set artist = craft.tags()
+    .group("artists")
+    .title(artistName)
+    .one() %}
+
+{% if artist != null %}
+    {% set entries = craft.entries.relatedTo(artist).all()  %}
+    {% for entry in entries %}
+        {{ entry.title }}
+    {% endfor %}
+{% else %}
+    {# display 404? #}
+{% endif %}
+
+
